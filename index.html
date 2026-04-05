@@ -1,65 +1,264 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <title>Fuga de Ferro</title>
-    
-    <!-- SEO básico -->
-    <meta name="description" content="Jogo Fuga de Ferro - escape de um castelo com estratégia e furtividade.">
-    
-    <!-- Favicon -->
+    <meta name="description" content="Fuga de Ferro - escape de um castelo com estratégia e furtividade.">
     <link rel="icon" href="Imagens/icon.png">
-
-    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<header class="header">
-    <div class="container">
-        <img src="Imagens/icon.png" alt="Logo do jogo Fuga de Ferro" class="logo">
-
-        <h1>Fuga de Ferro</h1>
-        <p class="subtitle">Prepare-se para escapar ou morrer tentando.</p>
-
-        <a class="botao" href="#">Jogar agora</a>
-    </div>
-</header>
-
-<main class="container">
-
-    <section class="personagem">
-        <img src="Imagens/personagem.png" alt="Personagem Elias Vance">
-
-        <div class="descricao">
-            <h2>Sargento Elias "Ghost" Vance</h2>
-
-            <p>
-                Elias Vance não é o típico fuzileiro barulhento e impulsivo. Ele é um veterano de operações especiais,
-                conhecido por sua calma sob pressão e abordagem metódica.
-            </p>
-
-            <p>
-                Cresceu em uma pequena cidade no meio-oeste, onde aprendeu o valor do trabalho duro e da comunidade.
-                Sua experiência em combate o ensinou a ser autossuficiente e a pensar rapidamente, mas também deixou
-                cicatrizes invisíveis.
-            </p>
-
-            <p>
-                Ele não é de muitas palavras, preferindo observar antes de agir. Sua lealdade à equipe é inabalável.
-                Mesmo preso em um castelo, ele transforma cada dia em uma oportunidade de fuga.
-            </p>
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="nav-logo" onclick="irPara('home')">
+            <img src="Imagens/icon.png" alt="Logo" class="nav-icon">
+            <span>Fuga de Ferro</span>
         </div>
-    </section>
+        <ul class="nav-links">
+            <li><span class="nav-link active" onclick="irPara('home')">Home</span></li>
+            <li><span class="nav-link" onclick="irPara('sobre')">Sobre</span></li>
+            <li><span class="nav-link" onclick="irPara('personagens')">Personagens</span></li>
+            <li><span class="nav-link" onclick="irPara('galeria')">Galeria</span></li>
+            <li><span class="nav-link" onclick="irPara('contato')">Contato</span></li>
+        </ul>
+        <span class="botao-nav" onclick="alert('Em breve!')">Jogar agora</span>
+    </div>
+</nav>
 
-</main>
+<!-- ========== HOME ========== -->
+<section id="home" class="page active">
+
+    <div class="hero">
+        <div class="container">
+            <h1>Fuga de Ferro</h1>
+            <p>Prepare-se para escapar ou morrer tentando.</p>
+            <span class="botao" onclick="alert('Em breve!')">Jogar agora</span>
+        </div>
+    </div>
+
+    <main class="container">
+        <div class="personagem">
+            <img src="Imagens/personagem.png" alt="Sargento Elias Vance">
+            <div class="descricao">
+                <h2>Sargento Elias "Ghost" Vance</h2>
+                <p>Elias Vance não é o típico fuzileiro barulhento e impulsivo. Ele é um veterano de operações especiais, conhecido por sua calma sob pressão e abordagem metódica.</p>
+                <p>Cresceu em uma pequena cidade no meio-oeste, onde aprendeu o valor do trabalho duro e da comunidade. Sua experiência em combate o ensinou a ser autossuficiente e a pensar rapidamente, mas também deixou cicatrizes invisíveis.</p>
+                <p>Ele não é de muitas palavras, preferindo observar antes de agir. Mesmo preso em um castelo, ele transforma cada dia em uma oportunidade de fuga.</p>
+            </div>
+        </div>
+    </main>
+
+</section>
+
+<!-- ========== SOBRE ========== -->
+<section id="sobre" class="page">
+
+    <div class="banner">
+        <div class="container">
+            <h1>Sobre o Jogo</h1>
+            <p>A história por trás de Fuga de Ferro</p>
+        </div>
+    </div>
+
+    <main class="container">
+
+        <div class="bloco">
+            <h2>O que é Fuga de Ferro?</h2>
+            <p>Fuga de Ferro é um jogo de ação e furtividade ambientado em uma fortaleza medieval sombria. Você assume o papel do Sargento Elias "Ghost" Vance, um operador de elite capturado e forçado a escapar usando apenas sua inteligência e habilidade.</p>
+            <p>Com mecânicas de stealth profundas, combate tático e segredos escondidos por toda a fortaleza, cada partida é uma nova batalha pela liberdade.</p>
+        </div>
+
+        <div class="bloco">
+            <h2>Como surgiu o projeto?</h2>
+            <p>Fuga de Ferro nasceu da paixão por jogos de estratégia e narrativas imersivas. Desenvolvido de forma independente, o projeto tem foco total na experiência do jogador e na profundidade da história.</p>
+            <p>Cada detalhe — dos diálogos à arquitetura do castelo — foi pensado para criar uma atmosfera única onde tensão e adrenalina caminham juntas.</p>
+        </div>
+
+        <div class="bloco">
+            <h2>O que você vai encontrar</h2>
+            <p>🗺️ <strong>Mapa interativo</strong> — Explore cada corredor e segredo do castelo.</p>
+            <p>🎯 <strong>Missões variadas</strong> — Objetivos únicos que testam diferentes habilidades.</p>
+            <p>📖 <strong>Narrativa rica</strong> — Uma história com personagens complexos e decisões que importam.</p>
+        </div>
+
+    </main>
+
+</section>
+
+<!-- ========== PERSONAGENS ========== -->
+<section id="personagens" class="page">
+
+    <div class="banner">
+        <div class="container">
+            <h1>Personagens</h1>
+            <p>Conheça quem povoa o Castelo de Ferro</p>
+        </div>
+    </div>
+
+    <main class="container">
+        <div class="personagem">
+            <img src="Imagens/personagem.png" alt="Sargento Elias Vance">
+            <div class="descricao">
+                <h2>Sargento Elias "Ghost" Vance</h2>
+                <p>Veterano de operações especiais capturado e mantido em um castelo medieval. Calmo, metódico e leal, ele transforma cada dia em uma oportunidade de fuga.</p>
+                <p>Sua habilidade de agir nas sombras e seu raciocínio rápido são suas principais armas. Ele observa, planeja e age — raramente erra.</p>
+                <p>Cresceu em uma pequena cidade no meio-oeste, onde aprendeu o valor da comunidade e do trabalho duro. Essas raízes moldam cada decisão que toma dentro do castelo.</p>
+            </div>
+        </div>
+    </main>
+
+</section>
+
+<!-- ========== GALERIA ========== -->
+<section id="galeria" class="page">
+
+    <div class="banner">
+        <div class="container">
+            <h1>Galeria</h1>
+            <p>Screenshots e arte do jogo</p>
+        </div>
+    </div>
+
+    <main class="container">
+        <p class="galeria-titulo">Clique em uma imagem para ampliar</p>
+        <div class="galeria-grid">
+            <div class="galeria-item" onclick="abrirModal('🎮', 'Gameplay — Fase 1')">
+                <span>🎮</span><p>Gameplay — Fase 1</p>
+            </div>
+            <div class="galeria-item" onclick="abrirModal('🏰', 'Castelo Principal')">
+                <span>🏰</span><p>Castelo Principal</p>
+            </div>
+            <div class="galeria-item" onclick="abrirModal('🎨', 'Arte — Elias Vance')">
+                <span>🎨</span><p>Arte — Elias Vance</p>
+            </div>
+            <div class="galeria-item" onclick="abrirModal('⚔️', 'Combate tático')">
+                <span>⚔️</span><p>Combate tático</p>
+            </div>
+            <div class="galeria-item" onclick="abrirModal('🌑', 'Masmorra Secreta')">
+                <span>🌑</span><p>Masmorra Secreta</p>
+            </div>
+            <div class="galeria-item" onclick="abrirModal('🕵️', 'Modo Stealth')">
+                <span>🕵️</span><p>Modo Stealth</p>
+            </div>
+        </div>
+    </main>
+
+</section>
+
+<!-- ========== CONTATO ========== -->
+<section id="contato" class="page">
+
+    <div class="banner">
+        <div class="container">
+            <h1>Contato</h1>
+            <p>Fale com o Suporte</p>
+        </div>
+    </div>
+
+    <main class="container">
+        <div class="contato-wrap">
+
+            <div class="contato-info">
+                <h2>Entre em contato</h2>
+                <p class="contato-intro">Tem sugestões, bugs para reportar ou só quer trocar uma ideia sobre o jogo? Fique à vontade para entrar em contato.</p>
+                <div class="contato-item">
+                    <span>📧</span>
+                    <div><strong>E-mail</strong><p>gabrielcarneloci12@outlook.com</p></div>
+                </div>
+                <div class="contato-item">
+                    <span>🎮</span>
+                    <div><strong>Discord</strong><p>Comunidade Fuga de Ferro</p></div>
+                </div>
+                <div class="contato-item">
+                    <span>🐦</span>
+                    <div><strong>Twitter / X</strong><p>@gb_rlkx</p></div>
+                </div>
+            </div>
+
+            <div class="contato-form">
+                <h2>Enviar mensagem</h2>
+                <div class="form-group">
+                    <label>Nome</label>
+                    <input type="text" id="nome" placeholder="Seu nome">
+                </div>
+                <div class="form-group">
+                    <label>E-mail</label>
+                    <input type="email" id="email" placeholder="seu@email.com">
+                </div>
+                <div class="form-group">
+                    <label>Mensagem</label>
+                    <textarea id="mensagem" rows="5" placeholder="Escreva sua mensagem..."></textarea>
+                </div>
+                <button class="botao" onclick="enviarForm()">Enviar mensagem</button>
+                <p id="feedback" class="feedback"></p>
+            </div>
+
+        </div>
+    </main>
+
+</section>
+
+<!-- MODAL -->
+<div class="modal" id="modal" onclick="fecharModal()">
+    <div class="modal-box" onclick="event.stopPropagation()">
+        <span id="modal-emoji"></span>
+        <p id="modal-titulo"></p>
+        <button class="botao" onclick="fecharModal()">Fechar</button>
+    </div>
+</div>
 
 <footer class="footer">
-    <p>© 2026 Gabriel Carneloci - Todos os direitos reservados</p>
+    <div class="footer-links">
+        <span onclick="irPara('home')">Home</span>
+        <span onclick="irPara('sobre')">Sobre</span>
+        <span onclick="irPara('personagens')">Personagens</span>
+        <span onclick="irPara('galeria')">Galeria</span>
+        <span onclick="irPara('contato')">Contato</span>
+    </div>
+    <p>© 2026 Gabriel Carneloci — Todos os direitos reservados</p>
 </footer>
+
+<script>
+    function irPara(pagina) {
+        document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+        document.getElementById(pagina).classList.add('active');
+        const paginas = ['home', 'sobre', 'personagens', 'galeria', 'contato'];
+        document.querySelectorAll('.nav-link').forEach((l, i) => {
+            l.classList.toggle('active', paginas[i] === pagina);
+        });
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function abrirModal(emoji, titulo) {
+        document.getElementById('modal-emoji').textContent = emoji;
+        document.getElementById('modal-titulo').textContent = titulo;
+        document.getElementById('modal').style.display = 'flex';
+    }
+
+    function fecharModal() {
+        document.getElementById('modal').style.display = 'none';
+    }
+
+    function enviarForm() {
+        const n = document.getElementById('nome').value.trim();
+        const e = document.getElementById('email').value.trim();
+        const m = document.getElementById('mensagem').value.trim();
+        const f = document.getElementById('feedback');
+        if (!n || !e || !m) {
+            f.style.color = '#ff0015';
+            f.textContent = '⚠️ Preencha todos os campos antes de enviar.';
+            return;
+        }
+        f.style.color = '#4caf50';
+        f.textContent = '✅ Mensagem enviada! Em breve entraremos em contato.';
+        document.getElementById('nome').value = '';
+        document.getElementById('email').value = '';
+        document.getElementById('mensagem').value = '';
+    }
+</script>
 
 </body>
 </html>
