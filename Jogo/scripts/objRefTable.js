@@ -4,14 +4,17 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Sprite,
 		C3.Behaviors.solid,
 		C3.Plugins.Tilemap,
+		C3.Behaviors.Flash,
 		C3.Behaviors.Platform,
 		C3.Behaviors.scrollto,
 		C3.Plugins.Keyboard,
-		C3.Behaviors.Flash,
 		C3.Behaviors.Bullet,
 		C3.Behaviors.destroy,
 		C3.Behaviors.Rotate,
 		C3.Plugins.Spritefont2,
+		C3.Plugins.Audio,
+		C3.Plugins.System.Cnds.OnLayoutStart,
+		C3.Plugins.Audio.Acts.Play,
 		C3.Plugins.System.Cnds.EveryTick,
 		C3.Plugins.Sprite.Acts.SetAnim,
 		C3.Plugins.System.Cnds.CompareVar,
@@ -44,7 +47,8 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Sprite.Acts.SetVisible,
 		C3.Plugins.Spritefont2.Acts.SetVisible,
 		C3.Plugins.Spritefont2.Acts.SetText,
-		C3.Plugins.Sprite.Acts.SetBoolInstanceVar
+		C3.Plugins.Sprite.Acts.SetBoolInstanceVar,
+		C3.Plugins.Sprite.Cnds.IsBoolInstanceVarSet
 	];
 };
 self.C3_JsPropNameTable = [
@@ -55,11 +59,14 @@ self.C3_JsPropNameTable = [
 	{fundo2: 0},
 	{janela: 0},
 	{suporte: 0},
+	{Flash: 0},
 	{Sprite2: 0},
+	{Platform: 0},
 	{caixa: 0},
 	{Porta: 0},
 	{Jogador: 0},
 	{Chave: 0},
+	{Bomba: 0},
 	{Plataforma: 0},
 	{CentrarEm: 0},
 	{Sprite3: 0},
@@ -67,9 +74,7 @@ self.C3_JsPropNameTable = [
 	{Teclado: 0},
 	{Sprite4: 0},
 	{Direcao: 0},
-	{Platform: 0},
 	{Solid: 0},
-	{Flash: 0},
 	{Inimigo: 0},
 	{sensordireitapatrulha: 0},
 	{sensoresquerdapatrulha2: 0},
@@ -86,6 +91,9 @@ self.C3_JsPropNameTable = [
 	{jogadoricon: 0},
 	{SpriteFont: 0},
 	{chave2: 0},
+	{bomba: 0},
+	{Chefao: 0},
+	{Audio: 0},
 	{Vida: 0}
 ];
 
@@ -116,5 +124,8 @@ self.InstanceType = {
 	blackground: class extends self.ISpriteInstance {},
 	jogadoricon: class extends self.ISpriteInstance {},
 	SpriteFont: class extends self.ISpriteFontInstance {},
-	chave2: class extends self.ISpriteInstance {}
+	chave2: class extends self.ISpriteInstance {},
+	bomba: class extends self.ISpriteInstance {},
+	Chefao: class extends self.ISpriteInstance {},
+	Audio: class extends self.IInstance {}
 }
