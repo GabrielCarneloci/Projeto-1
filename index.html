@@ -6,143 +6,111 @@
     <title>Fuga de Ferro</title>
     <meta name="description" content="Fuga de Ferro - escape de um castelo com estratégia e furtividade.">
     <link rel="icon" href="Imagens/icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Fuga de Ferro</h1>
-    <iframe width="100%" height="600" src="Jogo/index.html"></iframe>
-    <p> 
-        <a href="Jogo/index.html" target="_blank">
-            Jogar agora
-        </a>
-    </p>
 
-<!-- CHUVA -->
 <canvas id="chuva"></canvas>
 
 <nav class="navbar">
     <div class="nav-container">
         <div class="nav-logo" onclick="irPara('home')">
             <img src="Imagens/icon.png" alt="Logo" class="nav-icon">
-            <span>Fuga de Ferro</span>
+            <span>FUGA DE FERRO</span>
         </div>
         <ul class="nav-links">
-            <li>
-                <span class="nav-link active" onclick="irPara('home')">Home</span>
-            </li>
-            <li>
-                <span class="nav-link" onclick="irPara('sobre')">Sobre</span>
-            </li>
-            <li>
-                <span class="nav-link" onclick="irPara('personagens')">Personagens</span>
-            </li>
-            <li>
-                <span class="nav-link" onclick="irPara('galeria')">Galeria</span>
-            </li>
-            <li>
-                <span class="nav-link" onclick="irPara('contato')">Contato</span>
-            </li>
+            <li><span class="nav-link active" onclick="irPara('home')">Home</span></li>
+            <li><span class="nav-link" onclick="irPara('sobre')">Sobre</span></li>
+            <li><span class="nav-link" onclick="irPara('personagens')">Personagens</span></li>
+            <li><span class="nav-link" onclick="irPara('galeria')">Galeria</span></li>
+            <li><span class="nav-link" onclick="irPara('contato')">Contato</span></li>
         </ul>
-        <span class="botao-nav" onclick="alert('Em breve!')">Jogar agora</span>
+        <span class="botao-nav" onclick="alert('Em breve!')">[ Jogar ]</span>
     </div>
 </nav>
 
-<!-- ========== HOME ========== -->
+<!-- HOME -->
 <section id="home" class="page active">
-
     <div class="hero">
         <div class="container">
-            <h1>Fuga de Ferro</h1>
-            <p>Prepare-se para escapar ou morrer tentando.</p>
-            <span class="botao" onclick="alert('Em breve!')">Jogar agora</span>
+            <div class="hero-tag">// operação ativa</div>
+            <h1>FUGA DE <span>FERRO</span></h1>
+            <p>Prepare-se para escapar — ou morrer tentando.</p>
+            <span class="botao" onclick="alert('Em breve!')">[ Iniciar Missão ]</span>
         </div>
     </div>
-
     <main class="container">
         <div class="personagem">
-            <img src="Imagens/personagem.png" alt="Sargento Elias Vance">
+            <img src="Imagens/personagem.png" alt="Personagem">
             <div class="descricao">
                 <h2>Sargento Elias "Ghost" Vance</h2>
-                <p>Elias Vance não é o típico fuzileiro barulhento e impulsivo. Ele é um veterano de operações especiais, conhecido por sua calma sob pressão e abordagem metódica.</p>
-                <p>Cresceu em uma pequena cidade no meio-oeste, onde aprendeu o valor do trabalho duro e da comunidade. Sua experiência em combate o ensinou a ser autossuficiente e a pensar rapidamente, mas também deixou cicatrizes invisíveis.</p>
-                <p>Ele não é de muitas palavras, preferindo observar antes de agir. Mesmo preso em um castelo, ele transforma cada dia em uma oportunidade de fuga.</p>
+                <p>Elias Vance não é o típico fuzileiro barulhento e impulsivo. É um veterano de operações especiais, conhecido por sua calma sob pressão e abordagem metódica.</p>
+                <p>Cresceu em uma pequena cidade no meio-oeste, onde aprendeu o valor do trabalho duro e da comunidade. Sua experiência em combate o ensinou a ser autossuficiente e pensar rapidamente.</p>
+                <p>Prefere observar antes de agir. Mesmo preso em um castelo, ele transforma cada dia em uma oportunidade de fuga.</p>
             </div>
         </div>
     </main>
-
 </section>
 
-<!-- ========== SOBRE ========== -->
+<!-- SOBRE -->
 <section id="sobre" class="page">
-
     <div class="banner">
         <div class="container">
-            <h1>Sobre o Jogo</h1>
+            <h1>SOBRE O JOGO</h1>
             <p>A história por trás de Fuga de Ferro</p>
         </div>
     </div>
-
     <main class="container">
-
         <div class="bloco">
             <h2>O que é Fuga de Ferro?</h2>
-            <p>Fuga de Ferro é um jogo de ação e furtividade ambientado em uma fortaleza medieval sombria. Você assume o papel do Sargento Elias "Ghost" Vance, um operador de elite capturado e forçado a escapar usando apenas sua inteligência e habilidade.</p>
-            <p>Com mecânicas de stealth profundas, combate tático e segredos escondidos por toda a fortaleza, cada partida é uma nova batalha pela liberdade.</p>
+            <p>Um jogo de ação e furtividade ambientado em uma fortaleza medieval sombria. Você assume o papel do Sargento Elias "Ghost" Vance, um operador de elite capturado e forçado a escapar usando inteligência e habilidade.</p>
         </div>
-
         <div class="bloco">
             <h2>Como surgiu o projeto?</h2>
-            <p>Fuga de Ferro nasceu da paixão por jogos de estratégia e narrativas imersivas. Desenvolvido de forma independente, o projeto tem foco total na experiência do jogador e na profundidade da história.</p>
-            <p>Cada detalhe — dos diálogos à arquitetura do castelo — foi pensado para criar uma atmosfera única onde tensão e adrenalina caminham juntas.</p>
+            <p>Nasceu da paixão por jogos de estratégia e narrativas imersivas. Desenvolvido de forma independente, com foco total na experiência do jogador e na profundidade da história.</p>
         </div>
-
         <div class="bloco">
             <h2>O que você vai encontrar</h2>
             <p>🗺️ <strong>Mapa interativo</strong> — Explore cada corredor e segredo do castelo.</p>
             <p>🎯 <strong>Missões variadas</strong> — Objetivos únicos que testam diferentes habilidades.</p>
-            <p>📖 <strong>Narrativa rica</strong> — Uma história com personagens complexos e decisões que importam.</p>
+            <p>📖 <strong>Narrativa rica</strong> — Personagens complexos e decisões que importam.</p>
         </div>
-
     </main>
-
 </section>
 
-<!-- ========== PERSONAGENS ========== -->
+<!-- PERSONAGENS -->
 <section id="personagens" class="page">
-
     <div class="banner">
         <div class="container">
-            <h1>Personagens</h1>
+            <h1>PERSONAGENS</h1>
             <p>Conheça quem povoa o Castelo de Ferro</p>
         </div>
     </div>
-
     <main class="container">
         <div class="personagem">
-            <img src="Imagens/personagem.png" alt="Sargento Elias Vance">
+            <img src="Imagens/personagem.png" alt="Personagem">
             <div class="descricao">
                 <h2>Sargento Elias "Ghost" Vance</h2>
-                <p>Veterano de operações especiais capturado e mantido em um castelo medieval. Calmo, metódico e leal, ele transforma cada dia em uma oportunidade de fuga.</p>
-                <p>Sua habilidade de agir nas sombras e seu raciocínio rápido são suas principais armas. Ele observa, planeja e age — raramente erra.</p>
-                <p>Cresceu em uma pequena cidade no meio-oeste, onde aprendeu o valor da comunidade e do trabalho duro. Essas raízes moldam cada decisão que toma dentro do castelo.</p>
+                <p>Veterano de operações especiais capturado e mantido em um castelo medieval. Calmo, metódico e leal.</p>
+                <p>Age nas sombras com raciocínio rápido. Observa, planeja e age — raramente erra.</p>
+                <p>Suas raízes humildes moldam cada decisão que toma dentro do castelo.</p>
             </div>
         </div>
     </main>
-
 </section>
 
-<!-- ========== GALERIA ========== -->
+<!-- GALERIA -->
 <section id="galeria" class="page">
-
     <div class="banner">
         <div class="container">
-            <h1>Galeria</h1>
+            <h1>GALERIA</h1>
             <p>Screenshots e arte do jogo</p>
         </div>
     </div>
-
     <main class="container">
-        <p class="galeria-titulo">Clique na imagem para ampliar</p>
+        <p class="galeria-titulo">// clique para ampliar</p>
         <div class="galeria-grid">
             <div class="galeria-item" onclick="abrirModal('🎮', 'Gameplay — Fase 1')">
                 <span>🎮</span><p>Gameplay — Fase 1</p>
@@ -150,51 +118,39 @@
             <div class="galeria-item" onclick="abrirModal('🏰', 'Castelo Principal')">
                 <span>🏰</span><p>Castelo Principal</p>
             </div>
-            <div class="galeria-item" onclick="abrirModal('🎨', 'Arte — Elias Vance')">
-                <span>🎨</span>
-                <p>Arte — Elias Vance</p>
-            </div>
-            </div>
-            </div>
+            <div class="galeria-item" onclick="abrirModal('🎨', 'Arte — Personagem')">
+                <span>🎨</span><p>Arte — Personagem</p>
             </div>
         </div>
     </main>
-
 </section>
 
-<!-- ========== CONTATO ========== -->
+<!-- CONTATO -->
 <section id="contato" class="page">
-
     <div class="banner">
         <div class="container">
-            <h1>Contato</h1>
+            <h1>CONTATO</h1>
             <p>Fale com o Suporte</p>
         </div>
     </div>
-
     <main class="container">
         <div class="contato-wrap">
-
             <div class="contato-info">
                 <h2>Entre em contato</h2>
-                <p class="contato-intro">Tem sugestões, bugs para reportar ou só quer trocar uma ideia sobre o jogo? Fique à vontade para entrar em contato.</p>
+                <p class="contato-intro">Sugestões, bugs ou só quer trocar uma ideia? Fique à vontade.</p>
                 <div class="contato-item">
                     <span>📧</span>
                     <div><strong>E-mail</strong><p>gabrielcarneloci12@outlook.com</p></div>
                 </div>
                 <div class="contato-item">
                     <span>🎮</span>
-                    <div><strong>Discord</strong>
-                        <p>Comunidade Fuga de Ferro</p></div>
+                    <div><strong>Discord</strong><p>Comunidade Fuga de Ferro</p></div>
                 </div>
                 <div class="contato-item">
                     <span>🐦</span>
-                    <div><strong>Twitter / X</strong>
-                        <p>@gb_rlkx</p>
-                    </div>
+                    <div><strong>Twitter / X</strong><p>@gb_rlkx</p></div>
                 </div>
             </div>
-
             <div class="contato-form">
                 <h2>Enviar mensagem</h2>
                 <div class="form-group">
@@ -209,13 +165,11 @@
                     <label>Mensagem</label>
                     <textarea id="mensagem" rows="5" placeholder="Escreva sua mensagem..."></textarea>
                 </div>
-                <button class="botao" onclick="enviarForm()">Enviar mensagem</button>
+                <button class="botao" onclick="enviarForm()">[ Enviar ]</button>
                 <p id="feedback" class="feedback"></p>
             </div>
-
         </div>
     </main>
-
 </section>
 
 <!-- MODAL -->
@@ -223,7 +177,7 @@
     <div class="modal-box" onclick="event.stopPropagation()">
         <span id="modal-emoji"></span>
         <p id="modal-titulo"></p>
-        <button class="botao" onclick="fecharModal()">Fechar</button>
+        <button class="botao" onclick="fecharModal()">[ Fechar ]</button>
     </div>
 </div>
 
@@ -239,7 +193,6 @@
 </footer>
 
 <script>
-    // NAVEGAÇÃO
     function irPara(pagina) {
         document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
         document.getElementById(pagina).classList.add('active');
@@ -266,12 +219,12 @@
         const m = document.getElementById('mensagem').value.trim();
         const f = document.getElementById('feedback');
         if (!n || !e || !m) {
-            f.style.color = '#ff0015';
-            f.textContent = '⚠️ Preencha todos os campos antes de enviar.';
+            f.style.color = '#ff4455';
+            f.textContent = '⚠ Preencha todos os campos.';
             return;
         }
-        f.style.color = '#4caf50';
-        f.textContent = '✅ Mensagem enviada! Em breve entraremos em contato.';
+        f.style.color = '#00e1c8';
+        f.textContent = '✓ Mensagem enviada!';
         document.getElementById('nome').value = '';
         document.getElementById('email').value = '';
         document.getElementById('mensagem').value = '';
@@ -280,21 +233,16 @@
     // CHUVA
     const canvas = document.getElementById('chuva');
     const ctx = canvas.getContext('2d');
-
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
+    window.addEventListener('resize', () => { canvas.width = window.innerWidth; canvas.height = window.innerHeight; });
 
-    window.addEventListener('resize', () => {
-        canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight;
-    });
-
-    const gotas = Array.from({ length: 150 }, () => ({
+    const gotas = Array.from({ length: 100 }, () => ({
         x: Math.random() * canvas.width,
         y: Math.random() * canvas.height,
-        comprimento: Math.random() * 20 + 10,
-        velocidade: Math.random() * 4 + 2,
-        opacidade: Math.random() * 0.5 + 0.1
+        len: Math.random() * 16 + 8,
+        vel: Math.random() * 3 + 1.5,
+        op: Math.random() * 0.2 + 0.05
     }));
 
     function desenhar() {
@@ -302,19 +250,15 @@
         gotas.forEach(g => {
             ctx.beginPath();
             ctx.moveTo(g.x, g.y);
-            ctx.lineTo(g.x - 1, g.y + g.comprimento);
-            ctx.strokeStyle = `rgba(174, 214, 241, ${g.opacidade})`;
+            ctx.lineTo(g.x - 1, g.y + g.len);
+            ctx.strokeStyle = `rgba(0,225,200,${g.op})`;
             ctx.lineWidth = 1;
             ctx.stroke();
-            g.y += g.velocidade;
-            if (g.y > canvas.height) {
-                g.y = -g.comprimento;
-                g.x = Math.random() * canvas.width;
-            }
+            g.y += g.vel;
+            if (g.y > canvas.height) { g.y = -g.len; g.x = Math.random() * canvas.width; }
         });
         requestAnimationFrame(desenhar);
     }
-
     desenhar();
 </script>
 
