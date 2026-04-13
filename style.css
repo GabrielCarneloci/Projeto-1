@@ -1,11 +1,11 @@
 :root {
     --bg:     #0a0e12;
     --bg2:    #111820;
-    --teal:   #00e1c8;
+    --teal:   #d9a646;
     --steel:  #8ab4cc;
     --text:   #c8dde8;
-    --muted:  #607a8a;
-    --border: #1e3040;
+    --muted:  #b68d3a;
+    --border: #d9a646;
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
