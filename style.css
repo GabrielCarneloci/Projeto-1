@@ -231,7 +231,7 @@ body {
 
 .galeria-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
     gap: 14px;
     margin-bottom: 56px;
 }
@@ -239,7 +239,7 @@ body {
 .galeria-item {
     background: var(--bg2);
     border-radius: 6px;
-    padding: 26px 16px 16px;
+    padding: 12px 12px 14px;
     text-align: center;
     cursor: pointer;
     border: 1px solid var(--border);
@@ -247,7 +247,15 @@ body {
 }
 
 .galeria-item:hover { border-color: var(--teal); transform: translateY(-4px); }
-.galeria-item span { font-size: 44px; display: block; margin-bottom: 10px; }
+
+.galeria-item img {
+    width: 100%;
+    border-radius: 4px;
+    display: block;
+    margin-bottom: 10px;
+    border: 1px solid rgba(217,166,70,0.3);
+}
+
 .galeria-item p { font-size: 13px; color: var(--muted); }
 
 /* MODAL */
@@ -255,24 +263,32 @@ body {
     display: none;
     position: fixed;
     inset: 0;
-    background: rgba(0,0,0,0.85);
+    background: rgba(0,0,0,0.88);
     z-index: 999;
     align-items: center;
     justify-content: center;
+    padding: 20px;
 }
 
 .modal-box {
     background: var(--bg2);
     border: 1px solid var(--teal);
     border-radius: 6px;
-    padding: 38px 32px;
+    padding: 24px;
     text-align: center;
-    max-width: 360px;
-    width: 90%;
+    max-width: 800px;
+    width: 100%;
 }
 
-#modal-emoji { font-size: 68px; display: block; margin-bottom: 12px; }
-#modal-titulo { color: var(--steel); font-size: 15px; margin-bottom: 22px; }
+.modal-box img {
+    width: 100%;
+    border-radius: 4px;
+    display: block;
+    margin-bottom: 14px;
+    border: 1px solid var(--teal);
+}
+
+#modal-titulo { color: var(--steel); font-size: 15px; margin-bottom: 18px; font-family: 'Share Tech Mono', monospace; }
 
 /* CONTATO */
 .contato-wrap {
@@ -388,4 +404,5 @@ body {
     .hero h1 { font-size: 30px; }
     .banner h1 { font-size: 24px; }
     .contato-wrap { grid-template-columns: 1fr; }
+    .modal-box { padding: 16px; }
 }

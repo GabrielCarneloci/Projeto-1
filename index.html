@@ -121,14 +121,9 @@
     <main class="container">
         <p class="galeria-titulo">// clique para ampliar</p>
         <div class="galeria-grid">
-            <div class="galeria-item" onclick="abrirModal('🎮', 'Gameplay — Fase 1')">
-                <span>🎮</span><p>Gameplay — Fase 1</p>
-            </div>
-            <div class="galeria-item" onclick="abrirModal('🏰', 'Castelo Principal')">
-                <span>🏰</span><p>Castelo Principal</p>
-            </div>
-            <div class="galeria-item" onclick="abrirModal('🎨', 'Arte — Personagem')">
-                <span>🎨</span><p>Arte — Personagem</p>
+            <div class="galeria-item" onclick="abrirModal('Imagens/gameplay.png', 'Gameplay — Fase 1')">
+                <img src="Imagens/gameplay.png" alt="Gameplay — Fase 1">
+                <p>Gameplay — Fase 1</p>
             </div>
         </div>
     </main>
@@ -184,7 +179,7 @@
 <!-- MODAL -->
 <div class="modal" id="modal" onclick="fecharModal()">
     <div class="modal-box" onclick="event.stopPropagation()">
-        <span id="modal-emoji"></span>
+        <img id="modal-img" src="" alt="" style="width:100%; border-radius:4px; margin-bottom:14px; border:1px solid var(--teal); display:block;">
         <p id="modal-titulo"></p>
         <button class="botao" onclick="fecharModal()">[ Fechar ]</button>
     </div>
@@ -212,8 +207,9 @@
         window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
-    function abrirModal(emoji, titulo) {
-        document.getElementById('modal-emoji').textContent = emoji;
+    function abrirModal(src, titulo) {
+        document.getElementById('modal-img').src = src;
+        document.getElementById('modal-img').alt = titulo;
         document.getElementById('modal-titulo').textContent = titulo;
         document.getElementById('modal').style.display = 'flex';
     }
